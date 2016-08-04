@@ -1,0 +1,359 @@
+html{
+    height: 1520px;
+}
+.wrapper{
+    width: 1045px;
+    margin: auto;
+    padding: 0;
+    max-height: 1520px;
+}
+li{
+    list-style-type: none;
+}
+input,button,
+textarea {
+    outline:none !important;
+}
+
+    /* HEADER */
+
+.header{
+    top:0;
+    width: 1045px;
+    height: 175px;
+    position: fixed;
+    background: white;
+}
+
+.logo{
+    float: left;
+    margin:40px 0 0 30px;
+    width: 120px;
+    height: 40px;
+}
+
+
+span.tagline{
+    float: left;
+    margin: 40px 0 0 -2px;
+    width:250px;
+    max-height: 20px;
+    font-family: Georgia;
+    font-style: italic;
+    color: #87a6b9;
+    font-size: 18px;
+
+}
+span.general{
+    float: left;
+    margin: -20px -25px 2px 91px;
+}
+span.underLine{
+    float: left;
+    margin: 40px 0 0 150px;
+    width: 90px;
+    color: #87a6b9;
+    height: 20px;
+}
+span.phoneImg{
+    float:left;
+    width: 30px;
+    height: 30px;
+    margin: 40px 0 0 10px;
+}
+span.phoneNumber{
+    float: left;
+    margin:37px 0 0 10px;
+    width: 180px;
+    height: 25px;
+    color:#3e596a;
+    font-family:"PT Sans";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button.callBack{
+    float: left;
+    margin:37px 0 0 20px;
+    height: 29px;
+    background: #00c0ff;
+    width: 140px;
+    border-radius: 25px;
+    color:white;
+    border:1px solid #00c0ff;
+    font-size: 14px;
+    font-family: "Adobe Arabic";
+    font-weight: normal;
+}
+
+/*nav ul.navbar{
+    float: left;
+    margin: 45px 0 0 -118px;
+    width: 570px;
+    height:25px;
+    font:16px/0.67 PT Sans;
+    font-weight: bold;
+    letter-spacing: 2px;
+}*/
+/*.navbar li a{
+    text-transform: uppercase;
+    color:#3e596a;
+    margin-left: 25px;
+}
+.navbar li{
+    display:inline-block;
+}*/
+
+nav {
+    float: left;
+    clear: left;
+    width: 700px;
+    height: 25px;
+    margin: 45px 0 0 95px;
+}
+nav li{
+    float:left;
+    font-size:16px;
+    font-family: "Adobe Arabic";
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+nav li.tr{
+    margin: 0 0 0 12px;
+
+}
+.r{display: none}
+.navbar li a{
+    text-transform: uppercase;
+    color:#3e596a;
+    text-decoration: none;
+    border-bottom: 2px solid #00c0ff;
+}
+
+    /* SEARCH INPUT */
+.search {
+    float:left;
+    border-radius: 8px;
+    margin: 40px 0 0 20px;
+    width: 210px;
+    padding: 5px;
+    border: 1px solid #87a6b9;
+
+}
+input[type="search"] {
+    border: none;
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 180px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+}
+input[type="submit"] {
+    width: 20px;
+    height: 15px;
+    border: none;
+    background: url(../content/img/loop.jpg) no-repeat 50% 50%;
+}
+input[name="search"]{
+    margin: -7px 0 0 5px;
+    height: 16px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+    /*END HEADER!*/
+
+  /*CONTENT*/
+
+.content{
+    margin: 175px 0 0 0;
+    width: 1045px;
+    height: 1205px;
+
+}
+.gradient{
+    margin: auto;
+    width: 1045px;
+    height: 40px;
+    background: linear-gradient(to bottom, #F0F0F0,#F8F8F8);
+}
+span.contentLink{
+    float: left;
+    margin:70px 0 0 40px;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: bold;
+    color: #3e596a;
+
+}
+
+span.addres{
+    float: left;
+    margin: 133px 0 0 -180px;
+    fontsize:16px;
+    font-family: "Adobe Arabic";
+    font-style: italic;
+    color: #9ab4c4;
+}
+
+.clickMap{
+    float: left;
+    margin: 121px 0 0 40px;
+    height: 30px;
+    width: 140px;
+    background: #ff002a;
+    color:white;
+    font-size:18px;
+    font-family: "Adobe Arabic";
+    border-radius: 25px;
+    border:0px;
+    outline : none; /*for chrome delete border*/
+    border-style: none;
+}
+
+.map{
+    float: left;
+    margin:110px 0 0 40px;
+    width: 970px;
+    height: 350px;
+
+}
+.feedbackForm form{
+    float:right;
+    margin: 115px 320px 0 0;
+    width:525px;
+    height:395px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+.feedbackForm label{
+    float:left;
+    margin-left: 45px;
+    margin-top: 10px;
+    color:#737373;
+    font:14px/0.58 PT Sans;
+    font-weight: normal;
+}
+label.mail{
+    margin-top: 10px !important;
+}
+label.name{
+    margin-top: 113px !important;
+}
+label.phone{
+    margin-top: 35px !important;
+}
+label.email{
+    margin-top: 35px !important;
+}
+
+.feedbackForm input {
+    float:right;
+    margin: 4px 58px 10px 0;
+    background: white;
+    border:1px solid #b8c4ce;
+    border-radius: 15px;
+    width: 310px;
+    height: 25px;
+}
+.feedbackForm h1{
+    margin-top: 30px;
+    margin-left: 45px;
+    font:18px/0.75 PT Sans;
+    font-weight: bold;
+    color: #3e596a;
+}
+.fieldMain{
+    margin-top: 25px;
+}
+
+input.mail{
+    height: 100px !important;
+}
+
+ button.sendForm{
+     float:left;
+    width:120px;
+    height:35px;
+    border-radius: 25px;
+    background: #cc0000;
+    color: white;
+     border: 0px;
+     font-weight: normal;
+     font:18px/0.57 PT Sans;
+     margin:20px 0 0 265px;
+}
+
+
+    /*FOOTER*/
+
+.footer{
+    position:fixed;
+    height: 125px;
+    margin: auto;
+    width:1045px;
+    bottom: 0;
+    background: #eceef1;
+}
+
+span.logoMin{
+    float:left;
+    margin: 40px 0 0 25px;
+    color: #fc0b0b;
+    font:14px/0.58 PT Sans;
+    font-weight: normal;
+}
+ul.linkInfoFirst li a, ul.linkInfoSecond li a{
+    text-decoration: underline;
+    text-decoration-color:#17c6ff;
+    color:#17c6ff;
+    font:14px/0.58 PT Sans;
+    font-weight: normal;
+}
+ul.linkInfoFirst li{
+    margin: 30px 0 0 345px;
+}
+ul.linkInfoSecond li{
+    margin: -48px 0 0 470px;
+}
+ul.linkInfoFirst li:last-child{
+    margin-top: 10px !important;
+}
+ul.linkInfoSecond li:last-child{
+    margin-top: 10px !important;
+}
+.footerInfo{
+
+    float: right;
+    height: 125px;
+    margin: -85px 0 0 0;
+    width:350px;
+}
+span.phoneImg1{
+    float:left;
+    width: 30px;
+    height: 30px;
+    margin: 30px 0 0 90px;
+}
+span.phoneNumber1{
+    float: right;
+    margin:27px 40px 0 0px;
+    width: 180px;
+    height: 25px;
+    color:#3e596a;
+    font-family:"PT Sans";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button.callBack1{
+    float: right;
+    margin:18px 40px 0 0px;
+    height: 29px;
+    background: #00c0ff;
+    width: 140px;
+    border-radius: 25px;
+    color:white;
+    border:1px solid #00c0ff;
+    font-size: 14px;
+    font-family: "Adobe Arabic";
+    font-weight: normal;
+}

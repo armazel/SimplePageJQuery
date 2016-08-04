@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="http://www.zooclub.ru/attach/fotogal/icon/13.gif" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="style/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="style/css/style.css">
+    <link type="text/css" rel="stylesheet" href="style/css/pop-up.css">
+    <script type="text/javascript" src="js/func.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        /*Show Google Map*/
+
+        $(document).ready(function(){
+
+            $(".map").hide();
+
+            $(".clickMap").click(function(){
+                $(".map").slideDown("slow")
+            });
+        });
+        /*POP-UP*/
+        $(document).ready(function(){
+            $('.popup .close_window, .overlay').click(function (){
+                $('.popup, .overlay').css({'opacity':'0', 'visibility':'hidden'});
+            });
+            $('a.open_window').click(function (e){
+                $('.popup, .overlay').css({'opacity':'1', 'visibility':'visible'});
+                e.preventDefault();
+            });
+        });
+    </script>
+    <title>GrizzlyTest</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1 class="logo">
+            <a href="#"><img src="style/content/img/Logo.png" alt="Логотип"></a>
+        </h1>
+        <span class="tagline">________<span class="general">Слоган компании</span></span>
+        <span class="underLine">___________</span>
+        <span class="phoneImg"><img src="style/content/img/phone.png" alt="Телефон"></span>
+        <span class="phoneNumber">(017) 123-45-67</span>
+        <a class="open_window"href="#"><button class="callBack">Перезвоните мне</button></a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#" title="О компании">о компании</a></li>
+                <li class="tr"><a href="#" title="Каталог">каталог</a></li>
+                <li class="tr"><a href="#" title="Полезная информация">полезная информация</a></li>
+                <li class="tr"><a href="#" title="Где купить">где купить</a></li>
+            </ul>
+        </nav>
+        <form>
+            <div class="search">
+                <input type="search" name="search">
+                <input type="submit" value="">
+            </div>
+        </form>
+    </div>
+    <div class="content">
+        <div class="gradient"></div>
+        <h1><span class="contentLink">Связаться с нами</span></h1>
+        <span class="addres">Наш адрес: г.Минск пр. Независимости 1</span>
+        <a class="showMap"><button class="clickMap">Мы на карте</button></a>
+        <div class="map">
+            <iframe class="r" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.088733396868!2d27.551562415913807!3d53.894626780097546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfdd2fad6bcf%3A0x38108871f2ee7aff!2z0YPQuy4g0JrQuNGA0L7QstCwIDksINCc0LjQvdGB0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sru!4v1469284147149" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="maphide" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.665754933067!2d27.559850715914127!3d53.90214458009923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfc1ad351439%3A0x40d3a4b415fead61!2z0L_RgNC-0YHQv9C10LrRgiDQndC10LfQsNCy0LjRgdC40LzQvtGB0YLQuCAxLCDQnNC40L3RgdC6LCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1469284401316" width="970" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="feedbackForm">
+            <form>
+                <h1 class="jeneral">Обратная связь</h1>
+                <div class="fieldMain"><label class="mail">Сообщение <span style="color: #cc0000;">*</span></label><input type="text" class="mail" cols="40" rows="5"></div><br/>
+                <div class="field"><label class="name">Как вас зовут?</label><input type="text" class="name"></div><br/>
+                    <div class="field"><label class="phone">Телефон <span style="color: #cc0000;">*</span></label><input type="text" class="phone"></div><br/>
+                        <div class="field"><label class="email">Эл.почта <span style="color: #cc0000;">*</span></label><input type="email" class="email"></div><br/>
+                <button class="sendForm" type="submit" value="Отправить">Отправить</button>
+            </form>
+        </div>
+    </div>
+        <!--FOOTER-->
+    <div class="footer">
+        <span class="logoMin">лого маленькое</span>
+        <ul class="linkInfoFirst">
+            <li><a href="#" title="О компании">О компании</a></li>
+            <li><a href="#" title="Каталог">Каталог</a></li>
+        </ul>
+        <ul class="linkInfoSecond">
+            <li><a href="#" title="Где купить">Где купить</a></li>
+            <li><a href="#" title="Полезная информация">Полезная информация</a></li>
+        </ul>
+        <div class="footerInfo">
+        <span class="phoneImg1"><img src="style/content/img/phone.png" alt="Телефон"></span>
+        <span class="phoneNumber1">(017) 123-45-67</span>
+        <a class="open_window"href="#"><button class="callBack1">Перезвоните мне</button></a>
+        </div>
+    </div>
+</div>
+        <!--POP-UP FRAME-->
+<div class="overlay" title="окно"></div>
+<div class="popup">
+    <div class="close_window">x</div>
+    <div class="feedbackFormPopup ">
+        <form>
+            <h1 class="jeneral">Обратная связь</h1>
+            <div class="fieldMain"><label class="mail">Сообщение <span style="color: #cc0000;">*</span></label><input type="text" class="mail" cols="40" rows="5"></div><br/>
+            <div class="field"><label class="name">Как вас зовут?</label><input type="text" class="name"></div><br/>
+            <div class="field"><label class="phone">Телефон <span style="color: #cc0000;">*</span></label><input type="text" class="phone"></div><br/>
+            <div class="field"><label class="email">Эл.почта <span style="color: #cc0000;">*</span></label><input type="email" class="email"></div><br/>
+            <button class="sendForm" type="submit" value="Отправить">Отправить</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
